@@ -70,11 +70,15 @@ body { font-family: 'Segoe UI', sans-serif; color: #1a1a1a; background: #fff; }
   color: #0f3460;
   font-size: 14px;
   font-weight: 500;
-  padding: 14px 36px;
+  padding: 16px 40px;
   border-radius: 40px;
   cursor: pointer;
   border: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* SECTIONS */
