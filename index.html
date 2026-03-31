@@ -15,7 +15,7 @@
     <div class="hero-badge">Laundry Premium</div>
     <h1>Pakaian Bersih,<br><span>Hidup Lebih Ringan</span></h1>
     <p>Layanan laundry profesional dengan teknologi modern. Bersih sempurna, harum tahan lama, tepat waktu.</p>
-    <button class="hero-cta" onclick="openWA()">Hubungi Kami</button>
+    <a class="hero-cta" href="javascript:void(0)" onclick="openWA()">Hubungi Kami</a>
   </div>
 
   <!-- LAYANAN -->
@@ -180,7 +180,7 @@
       </div>
       <h2>Halo! Ada yang bisa kami bantu?</h2>
       <p>Tim Clean Laundry siap melayani kamu. Chat langsung dengan kami sekarang untuk informasi harga, jadwal pickup, atau pemesanan.</p>
-      <a class="wa-btn" href="https://wa.me/6288296639471?text=Halo%20Clean%20Laundry!%20Saya%20tertarik%20dengan%20layanan%20laundry%20Anda." target="_blank">Chat di WhatsApp</a>
+      <a class="wa-btn" href="https://wa.me/628296639471?text=Halo%20Clean%20Laundry!%20Saya%20tertarik%20dengan%20layanan%20laundry%20Anda." target="_blank">Chat di WhatsApp</a>
       <button class="wa-later" onclick="closeWA()">Nanti saja</button>
     </div>
   </div>
@@ -209,8 +209,20 @@
       document.getElementById('waOverlay').classList.remove('show');
     }
 
-    document.getElementById('waOverlay').addEventListener('click', function(e) {
+    var overlay = document.getElementById('waOverlay');
+    overlay.addEventListener('click', function(e) {
       if (e.target === this) closeWA();
+    });
+    overlay.addEventListener('touchend', function(e) {
+      if (e.target === this) closeWA();
+    });
+
+    document.querySelector('.wa-close').addEventListener('touchend', function() {
+      closeWA();
+    });
+
+    document.querySelector('.wa-later').addEventListener('touchend', function() {
+      closeWA();
     });
   </script>
 
