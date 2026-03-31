@@ -5,41 +5,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Clean Laundry — Laundry Premium</title>
-  <meta name="description" content="Layanan laundry profesional dengan teknologi modern. Bersih, harum, dan tepat waktu.">
-  <style>
-    /* ... (Semua CSS Anda tetap sama di sini) ... */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #1a1a1a; background: #fff; overflow-x: hidden; }
-    
-    .progress-bar {
-      position: fixed;
-      top: 0; left: 0;
-      height: 3px;
-      background: #378add;
-      z-index: 9999;
-      width: 0%;
-      transition: width 0.1s ease;
-    }
-    /* ... (Sisa CSS Anda) ... */
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="progress-bar" id="progressBar"></div>
 
-  <section class="hero">
+  <div class="hero">
     <div class="hero-badge">Laundry Premium</div>
     <h1>Pakaian Bersih,<br><span>Hidup Lebih Ringan</span></h1>
     <p>Layanan laundry profesional dengan teknologi modern. Bersih sempurna, harum tahan lama, tepat waktu.</p>
     <button class="hero-cta" onclick="openWA()">Hubungi Kami</button>
-  </section>
+  </div>
 
-  <footer class="footer">
+  <div class="section">
+    <div class="section-label">Layanan Kami</div>
+    <div class="section-title">Solusi lengkap perawatan pakaian</div>
+    <p class="section-sub">Dari cuci harian hingga perawatan pakaian spesial, kami siap memberikan hasil terbaik.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </div>
+        <h3>Cuci & Setrika</h3>
+        <p>Bersih menyeluruh, rapi sempurna</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Laundry Express</h3>
+        <p>Selesai dalam 3-5 jam</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <h3>Antar Jemput</h3>
+        <p>Gratis pickup & delivery</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Perawatan Khusus</h3>
+        <p>Jas, gaun, batik & pakaian delicate</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section why-section">
+    <div class="section-label">Kenapa Kami</div>
+    <div class="section-title">Kepercayaan yang tidak kami sia-siakan</div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <div>
+          <h4>Deterjen premium</h4>
+          <p>Ramah kulit, aman untuk bayi dan sensitif</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <div>
+          <h4>Tracking real-time</h4>
+          <p>Pantau status cucian kamu via WhatsApp</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <div>
+          <h4>Garansi kepuasan</h4>
+          <p>Kurang puas? Kami cuci ulang gratis</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <div>
+          <h4>Tepat waktu</h4>
+          <p>Terlambat 15 menit, dapat diskon 10%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="price-section">
+    <div class="section-label">Harga</div>
+    <div class="section-title">Transparan, tanpa biaya tersembunyi</div>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Cuci Reguler</h3>
+        <div class="price-amount">Rp 7.000</div>
+        <div class="price-unit">per kg · 1-2 hari</div>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Terpopuler</div>
+        <h3>Cuci + Setrika</h3>
+        <div class="price-amount">Rp 12.000</div>
+        <div class="price-unit">per kg · 1-2 hari</div>
+      </div>
+      <div class="price-card">
+        <h3>Express</h3>
+        <div class="price-amount">Rp 18.000</div>
+        <div class="price-unit">per kg · 3-5 jam</div>
+      </div>
+      <div class="price-card">
+        <h3>Perawatan Khusus</h3>
+        <div class="price-amount">Mulai Rp 25.000</div>
+        <div class="price-unit">per item</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="section-label">Testimoni</div>
+    <div class="section-title">Kata mereka tentang kami</div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Pakaian balik bersih banget dan wangi. Antar jemput tepat waktu. Sudah 6 bulan langganan dan tidak pernah kecewa."</p>
+        <div class="testi-author">
+          <div class="avatar">SR</div>
+          <div>
+            <div class="testi-name">Sari R.</div>
+            <div class="testi-loc">Pelanggan setia</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Baju batik kesayangan saya yang takut dicuci sembarangan, di sini aman dan hasilnya luar biasa."</p>
+        <div class="testi-author">
+          <div class="avatar">BP</div>
+          <div>
+            <div class="testi-name">Budi P.</div>
+            <div class="testi-loc">Pelanggan baru</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Layanan express benar-benar membantu saat mendadak butuh baju bersih untuk meeting. Recommended!"</p>
+        <div class="testi-author">
+          <div class="avatar">DN</div>
+          <div>
+            <div class="testi-name">Dewi N.</div>
+            <div class="testi-loc">Pelanggan setia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
     <strong>Clean Laundry</strong><br>
     Jl. Contoh No. 123, Kota Anda<br>
     Buka setiap hari 07.00 – 21.00<br><br>
     <span style="color:rgba(255,255,255,0.4); font-size:12px;">© 2026 Clean Laundry. All rights reserved.</span>
-  </footer>
+  </div>
 
   <div class="wa-overlay" id="waOverlay">
     <div class="wa-modal">
@@ -50,37 +173,38 @@
         </svg>
       </div>
       <h2>Halo! Ada yang bisa kami bantu?</h2>
-      <p>Tim Clean Laundry siap melayani kamu. Chat sekarang untuk info harga atau jemput pakaian.</p>
-      <a class="wa-btn" href="https://wa.me/6288296639471?text=Halo%20Clean%20Laundry!%20Saya%20ingin%20tanya%20tentang%20layanan%20laundry." target="_blank">Chat di WhatsApp</a>
+      <p>Tim Clean Laundry siap melayani kamu. Chat langsung dengan kami sekarang untuk informasi harga, jadwal pickup, atau pemesanan.</p>
+      <a class="wa-btn" href="https://wa.me/6288296639471?text=Halo%20Clean%20Laundry!%20Saya%20tertarik%20dengan%20layanan%20laundry%20Anda." target="_blank">Chat di WhatsApp</a>
       <button class="wa-later" onclick="closeWA()">Nanti saja</button>
     </div>
   </div>
 
   <script>
-    const progressBar = document.getElementById('progressBar');
-    const waOverlay = document.getElementById('waOverlay');
-    let hasShown = false;
+    var hasShown = false;
 
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
-      progressBar.style.width = pct + '%';
+      document.getElementById('progressBar').style.width = Math.min(pct, 100) + '%';
 
-      // Munculkan popup WA otomatis saat scroll 80%
-      if (pct >= 80 && !hasShown) {
+      if (pct >= 85 && !hasShown) {
         hasShown = true;
-        openWA();
+        document.getElementById('waOverlay').classList.add('show');
       }
     });
 
-    function openWA() { waOverlay.classList.add('show'); }
-    function closeWA() { waOverlay.classList.remove('show'); }
+    function openWA() {
+      document.getElementById('waOverlay').classList.add('show');
+    }
 
-    // Tutup modal jika klik di area gelap (overlay)
-    waOverlay.addEventListener('click', (e) => {
-      if (e.target === waOverlay) closeWA();
+    function closeWA() {
+      document.getElementById('waOverlay').classList.remove('show');
+    }
+
+    document.getElementById('waOverlay').addEventListener('click', function(e) {
+      if (e.target === this) closeWA();
     });
   </script>
 
